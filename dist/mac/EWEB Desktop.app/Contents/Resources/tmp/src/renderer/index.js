@@ -1,2 +1,0 @@
-/* renderer */
-console.log('renderer')

@@ -1,2 +1,2 @@
 # eweb
-Test excluding files from electron-webpack and electron-builder
+Project to test excluding files from electron-webpack and electron-builder

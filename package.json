@@ -1,0 +1,73 @@
+{
+  "name": "eweb",
+  "version": "1.0.0",
+  "description": "Project to test excluding files with electron-webpack and electron-builder",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-webpack dev",
+    "build:mac": "rimraf dist && electron-webpack && electron-builder -m",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.eweb.test",
+    "productName": "EWEB Desktop",
+    "copyright": "© 2018 test, LLC.",
+    "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
+    "directories": {
+      "buildResources": "src/assets"
+    },
+    "files": [
+      "**/*",
+      "src",
+      "!.*",
+      "!private"
+    ],
+    "extraResources": [
+      {
+        "from": "src/assets",
+        "to": "assets",
+        "filter": [
+          "!css"
+        ]
+      }
+    ],
+    "mac": {
+      "files": [
+        "!node_modules/@ffprobe-installer/linux-ia32/${/*}",
+        "!node_modules/@ffprobe-installer/linux-x64/${/*}",
+        "!node_modules/@ffprobe-installer/win32-ia32/${/*}",
+        "!node_modules/@ffprobe-installer/win32-x64/${/*}",
+        "!node_modules/@ffmpeg-installer/linux-ia32/${/*}",
+        "!node_modules/@ffmpeg-installer/linux-x64/${/*}",
+        "!node_modules/@ffmpeg-installer/win32-ia32/${/*}",
+        "!node_modules/@ffmpeg-installer/win32-x64/${/*}"
+      ],
+      "category": "public.app-category.video"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglassllc/eweb.git"
+  },
+  "keywords": [
+    "electron",
+    "electron-webpack",
+    "electron-builder"
+  ],
+  "author": "Douglass E. Hock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglassllc/eweb/issues"
+  },
+  "homepage": "https://github.com/douglassllc/eweb#readme",
+  "devDependencies": {
+    "electron": "^3.0.9",
+    "electron-builder": "^20.36.2",
+    "electron-webpack": "^2.6.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.26.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9"
+  }
+}

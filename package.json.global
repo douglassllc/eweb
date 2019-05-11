@@ -16,6 +16,11 @@
       "buildResources": "src/assets"
     },
     "files": [
+      "**/*",
+      "!src",
+      "!.*",
+      "!package.json.*",
+      "!private"
     ],
     "extraResources": [
       {
@@ -27,21 +32,6 @@
       }
     ],
     "mac": {
-      "files": [
-      "**/*",
-      "node_modules/**/*",
-      "!src",
-      "!private",
-      "!dist",
-        "!node_modules/@ffprobe-installer/linux-ia32/${/*}",
-        "!node_modules/@ffprobe-installer/linux-x64/${/*}",
-        "!node_modules/@ffprobe-installer/win32-ia32/${/*}",
-        "!node_modules/@ffprobe-installer/win32-x64/${/*}",
-        "!node_modules/@ffmpeg-installer/linux-ia32/${/*}",
-        "!node_modules/@ffmpeg-installer/linux-x64/${/*}",
-        "!node_modules/@ffmpeg-installer/win32-ia32/${/*}",
-        "!node_modules/@ffmpeg-installer/win32-x64/${/*}"
-      ],
       "category": "public.app-category.video"
     }
   },
@@ -68,8 +58,6 @@
     "webpack": "^4.26.0"
   },
   "dependencies": {
-    "@ffmpeg-installer/ffmpeg": "^1.0.17",
-    "@ffprobe-installer/ffprobe": "^1.0.10",
     "source-map-support": "^0.5.9"
   }
 }

@@ -15,8 +15,7 @@
     "directories": {
       "buildResources": "src/assets"
     },
-    "files": [
-    ],
+    "files": [],
     "extraResources": [
       {
         "from": "src/assets",
@@ -28,11 +27,11 @@
     ],
     "mac": {
       "files": [
-      "**/*",
-      "node_modules/**/*",
-      "!src",
-      "!private",
-      "!dist",
+        "**/*",
+        "node_modules/**/*",
+        "!src",
+        "!private",
+        "!dist",
         "!node_modules/@ffprobe-installer/linux-ia32/${/*}",
         "!node_modules/@ffprobe-installer/linux-x64/${/*}",
         "!node_modules/@ffprobe-installer/win32-ia32/${/*}",
@@ -61,15 +60,15 @@
   },
   "homepage": "https://github.com/douglassllc/eweb#readme",
   "devDependencies": {
-    "electron": "^3.0.10",
-    "electron-builder": "^20.36.2",
-    "electron-webpack": "^2.6.0",
-    "rimraf": "^2.6.2",
-    "webpack": "^4.26.0"
+    "electron": "^3.1.10",
+    "electron-builder": "^20.43.0",
+    "electron-webpack": "^2.6.2",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.33.0"
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.17",
-    "@ffprobe-installer/ffprobe": "^1.0.10",
-    "source-map-support": "^0.5.9"
+    "@ffprobe-installer/ffprobe": "^1.0.12",
+    "source-map-support": "^0.5.12"
   }
 }

@@ -1,4 +1,5 @@
 # eweb
+
 Project to test excluding files from electron-webpack and electron-builder
 
 # Different package files
@@ -20,4 +21,5 @@ Project to test excluding files from electron-webpack and electron-builder
   Same as `package.json.all`
 
 # Git
+
 Project uses git-flow

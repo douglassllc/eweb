@@ -1,11 +1,12 @@
 {
   "name": "eweb",
-  "version": "1.0.0",
+  "version": "0.2.7",
   "description": "Project to test excluding files with electron-webpack and electron-builder",
   "main": "index.js",
   "scripts": {
     "start": "electron-webpack dev",
     "build:mac": "rimraf dist && electron-webpack && electron-builder -m"
+    "postversion": "git push && git push --tags"
   },
   "build": {
     "appId": "com.eweb.test",

@@ -4,7 +4,7 @@ Project to test excluding files from electron-webpack and electron-builder
 
 # Summary
 
-This repo has been used to test an issue with electron-builder and for practicing git flow
+This repo has been used to test an issue with electron-builder related to files included/excluded from asar and for practicing git flow
 
 # Different package files
 

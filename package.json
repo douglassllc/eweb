@@ -1,6 +1,6 @@
 {
   "name": "eweb",
-  "version": "1.0.0",
+  "version": "0.2.14",
   "description": "Project to test excluding files with electron-webpack and electron-builder",
   "main": "index.js",
   "scripts": {

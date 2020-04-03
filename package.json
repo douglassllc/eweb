@@ -64,11 +64,11 @@
     "electron-builder": "^20.44.4",
     "electron-webpack": "^2.7.4",
     "rimraf": "^2.7.1",
-    "webpack": "^4.41.0"
+    "webpack": "^4.42.1"
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@ffprobe-installer/ffprobe": "^1.0.12",
-    "source-map-support": "^0.5.13"
+    "source-map-support": "^0.5.16"
   }
 }

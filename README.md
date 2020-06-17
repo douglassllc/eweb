@@ -1,6 +1,7 @@
 # eweb
 
 Project to test excluding files from electron-webpack and electron-builder
+Also used a generic repo for testing development workflow (i.e. git, gitflow, hub, etc.)
 
 # Summary
 
